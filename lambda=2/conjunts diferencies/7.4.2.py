@@ -8,7 +8,7 @@ def generate_bibd_7_4_2():
     for i in range(v):
         for punt in base_block:
             punt_mogut = (punt + i) % v
-            matrix[i][punt_mogut] = 1        
+            matrix[punt_mogut][i] = 1        
     return matrix
 
 matrix = generate_bibd_7_4_2()

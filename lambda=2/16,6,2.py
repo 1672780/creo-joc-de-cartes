@@ -7,7 +7,7 @@ def generate_bibd_16_6_2_grid():
     for b_idx, (br, bc) in enumerate(points):
         for p_idx, (pr, pc) in enumerate(points): 
             if (pr == br or pc == bc) and (pr, pc) != (br, bc):
-                matrix[b_idx, p_idx] = 1              
+                matrix[p_idx, b_idx] = 1              
     return matrix
 
 matrix = generate_bibd_16_6_2_grid()

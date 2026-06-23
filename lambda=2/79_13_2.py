@@ -61,7 +61,7 @@ def generate_bibd_79_13_2():
     for r_idx, block in enumerate(all_blocks):
         for p in block:
             c_idx = point_to_idx[p]
-            matrix[r_idx][c_idx] = 1             
+            matrix[c_idx][r_idx] = 1             
     return matrix
 
 matrix = generate_bibd_79_13_2()

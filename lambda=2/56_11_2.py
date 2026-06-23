@@ -37,7 +37,7 @@ def generate_bibd_56_11_2():
     matrix = np.zeros((56, 56), dtype=int)
     for row_idx, block in enumerate(all_blocks):
         for point in block:
-            matrix[row_idx][point - 1] = 1
+            matrix[point - 1][row_idx] = 1
             
     return matrix
 
